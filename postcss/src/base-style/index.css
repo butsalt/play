@@ -1,0 +1,9 @@
+body {
+    background-color: #eee;
+}
+
+$header-color: yellow;
+$container-color: steelblue;
+
+@import "./header.css";
+@import "./container.css";

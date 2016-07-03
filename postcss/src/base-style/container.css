@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    background-color: $container-color;
+}
+
+.container div {
+    width: 100px;
+    height: 100px;
+    background-image: url("./img/maple-small.jpg");
+}
