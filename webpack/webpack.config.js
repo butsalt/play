@@ -10,7 +10,7 @@ module.exports = {
     },
     output: {
         //指定用于异步加载时的文件夹路径
-        publicPath: './dist/',
+        publicPath: '/dist/',
         //编译后的目标目录
         path: './dist',
         //entry chunk的文件名
