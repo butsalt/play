@@ -1,0 +1,9 @@
+@import "./ico/index.css";
+
+body {
+    background: steelblue;
+}
+
+#target {
+    background: orange;
+}

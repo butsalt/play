@@ -1,0 +1,17 @@
+{
+  "name": "play-webpack",
+  "version": "1.0.0",
+  "description": "play webpack",
+  "main": "",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "webpack": "^1.12.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "butSalt",
+  "license": "MIT"
+}

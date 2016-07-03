@@ -1,0 +1,25 @@
+{
+  "name": "learn-gulp",
+  "version": "0.0.1",
+  "description": "play gulp",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "butSalt",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "del": "^2.2.0",
+    "file-loader": "^0.8.5",
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.7",
+    "handlebars": "^4.0.5",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "jquery": "^2.2.4"
+  }
+}

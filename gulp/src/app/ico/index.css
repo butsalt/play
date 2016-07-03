@@ -1,0 +1,5 @@
+@import "./smile.css";
+
+[class*="ico"] {
+    display: inline-block;
+}

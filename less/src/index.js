@@ -1,0 +1,1 @@
+require('./common-style/index.less');
