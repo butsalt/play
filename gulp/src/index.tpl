@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>learn-gulp</title>
+    <title>play</title>
     <script type="text/javascript" src="./assets/{{main}}"></script>
 </head>
 <body>
