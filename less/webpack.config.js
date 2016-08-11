@@ -16,8 +16,9 @@ module.exports = {
                 test: /\.less$/,
                 loader:
                     extractLess.extract(
-                        //当无法抽取时使用
+                        //当无法抽取到css文件时额外使用 style-loader
                         'style',
+                        //正常解析less时使用 less-loader -> css-loader
                         'css?sourceMap!less?sourceMap'
                     )
             },
