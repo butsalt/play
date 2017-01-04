@@ -3,6 +3,6 @@ var glob = require('glob');
 // a.js
 // b.js
 // c.js
-var files = glob.sync('files/one/@(a|b|c).js');
+var files = glob.sync('files/@(a|b|c).js');
 
 console.log(files);
