@@ -8,6 +8,6 @@ files = glob.sync('files/*js', {
 });
 console.log(files);
 
-//'.'开头的文件名除非通过option设置否则只能也以'.'作为文件名匹配的开头才能匹配到
+//'.'开头的 文件夹名/文件名 除非通过option设置否则只能也以'.'作为 文件夹名/文件名 匹配的开头才能匹配到
 files = glob.sync('files/.js');
 console.log(files);
