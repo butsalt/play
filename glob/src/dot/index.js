@@ -4,6 +4,7 @@ var files = glob.sync('files/*js');
 console.log(files);
 
 files = glob.sync('files/*js', {
+    // 匹配时，将'.'认为只是一般字符
     dot: true
 });
 console.log(files);
