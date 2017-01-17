@@ -4,7 +4,7 @@ var files = glob.sync('files/*js');
 console.log(files);
 
 files = glob.sync('files/*js', {
-    // 匹配时，将'.'认为只是一般字符
+    // **匹配，*匹配时，将以'.'开头的 文件夹/文件名 同样纳入匹配范围
     dot: true
 });
 console.log(files);
