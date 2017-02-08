@@ -9,6 +9,7 @@ fis.match('/lib/**.js', {
 });
 
 fis.match('/comp/**.js', {
+    // 声明该文件是模块，这样才会被fis-postpackager-loader封装成可以被mod.js识别的模块
     isMod: true,
     release: '/static/$0'
 });
