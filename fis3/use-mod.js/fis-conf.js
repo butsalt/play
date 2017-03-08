@@ -26,6 +26,7 @@ fis.match(
             'loader',
             {
                 resourceType: 'commonJs',
+                // resourceMap直接内嵌在html中
                 useInlineMap: true
             }
         )
