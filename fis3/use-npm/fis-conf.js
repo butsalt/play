@@ -1,4 +1,5 @@
-// 支持用commonjs的语法请求资源
+// 支持用commonjs的语法解析文件对其他文件的依赖请求
+// 并对isMod为true，isJsLike为true的文件进行wrapper
 fis.hook('commonjs', {
     extList: ['.js', '.jsx', '.es', '.ts', '.tsx']
 });
@@ -14,7 +15,7 @@ fis.match('/lib/**.js', {
     release: '/static/$0'
 });
 
-// 不使用默认的fis component
+// 不使用默认的fis component来解析资源请求
 fis.unhook('components');
 
 // 通过npm查找component
