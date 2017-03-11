@@ -8,5 +8,11 @@
     "build": "rollup -c"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "the-answer": "^1.0.0"
+  },
+  "devDependencies": {
+    "rollup-plugin-node-resolve": "^2.0.0"
+  }
 }

@@ -1,3 +1,3 @@
-import person from './person';
+import answer from 'the-answer';
 
-console.log(person.name);
+console.log('the answer is' + answer);
