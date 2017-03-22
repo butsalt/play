@@ -1,0 +1,14 @@
+{
+  "name": "play-co",
+  "version": "1.0.0",
+  "description": "play co",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "butSalt",
+  "license": "MIT",
+  "dependencies": {
+    "co": "^4.6.0"
+  }
+}
