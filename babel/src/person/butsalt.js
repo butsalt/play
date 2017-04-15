@@ -1,5 +1,5 @@
 export default {
-    name: 'butsalt'
+  name: 'butsalt'
 };
 
 export let age = 26;

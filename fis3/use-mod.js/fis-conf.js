@@ -5,31 +5,31 @@ fis.hook('commonjs');
 // /lib/*.js 只能匹配lib目录下的所有js文件
 // /lib/**.js 能匹配lib目录及其后代目录下的所有js文件
 fis.match('/lib/**.js', {
-    release: '/static/$0'
+  release: '/static/$0'
 });
 
 fis.match('/comp/**.js', {
-    // 声明该文件是模块，这样才会被fis3-hook-commonjs封装成可以被mod.js识别的模块
-    isMod: true,
-    release: '/static/$0'
+  // 声明该文件是模块，这样才会被fis3-hook-commonjs封装成可以被mod.js识别的模块
+  isMod: true,
+  release: '/static/$0'
 });
 
 fis.match('/lib/jquery/2.1.3/jquery.js', {
-    // 支持require('jquery')
-    id: 'jquery',
-    isMod: true
+  // 支持require('jquery')
+  id: 'jquery',
+  isMod: true
 });
 
 fis.match(
-    '::package',
-    {
-        postpackager: fis.plugin(
-            'loader',
-            {
-                resourceType: 'commonJs',
-                // resourceMap直接内嵌在html中
-                useInlineMap: true
-            }
-        )
-    }
+  '::package',
+  {
+    postpackager: fis.plugin(
+      'loader',
+      {
+        resourceType: 'commonJs',
+        // resourceMap直接内嵌在html中
+        useInlineMap: true
+      }
+    )
+  }
 );

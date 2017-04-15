@@ -1,4 +1,4 @@
 (() => {
-    let a = 'a';
-    console.log(a);
+  let a = 'a';
+  console.log(a);
 })();

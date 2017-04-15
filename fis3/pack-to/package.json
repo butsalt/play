@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "fis-parser-es6-babel": "^1.0.0"
+  "fis-parser-es6-babel": "^1.0.0"
   }
 }

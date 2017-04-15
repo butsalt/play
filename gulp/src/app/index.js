@@ -4,12 +4,12 @@ require('./base.css');
 var $ = require('jquery');
 
 $(function () {
-    var $target = $('#target');
+  var $target = $('#target');
 
-    $('<i class="smile-ico">')
-        .appendTo($target);
+  $('<i class="smile-ico">')
+    .appendTo($target);
 
-    $('<span>')
-        .text('It works!')
-        .appendTo($target);;
+  $('<span>')
+    .text('It works!')
+    .appendTo($target);;
 });

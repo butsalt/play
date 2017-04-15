@@ -7,7 +7,7 @@ console.log(files);
 
 // 如果配置matchBase为true，在字符串内没有/的场合，传入字符串只用来匹配最终的 文件夹名/文件名
 files = glob.sync('*.js', {
-    matchBase: true
+  matchBase: true
 });
 
 console.log(files);
