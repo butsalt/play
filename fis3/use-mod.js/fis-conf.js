@@ -15,7 +15,7 @@ fis.match('/comp/**.js', {
 });
 
 fis.match('/lib/jquery/2.1.3/jquery.js', {
-  // 支持require('jquery')
+  // 设置moduleId，从而支持require('jquery')
   id: 'jquery',
   isMod: true
 });

@@ -1,2 +1,6 @@
 var $ = require('jquery');
-$('#J-p').text('hello fis3!');
+
+// 异步加载
+require.async(['./person'], function (p) {
+  $('#J-p').text(p.name);
+});
