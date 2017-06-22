@@ -3,7 +3,7 @@ require('./base.css');
 
 var $ = require('jquery');
 
-$(function () {
+$(function() {
   var $target = $('#target');
 
   $('<i class="smile-ico">')

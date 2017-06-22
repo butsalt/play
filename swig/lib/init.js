@@ -2,7 +2,7 @@ const swig = require('swig');
 const tags = ['test'];
 
 tags
-  .forEach(function (tagName) {
+  .forEach(function(tagName) {
     const tag = require(`./tags/${tagName}`);
     swig.setTag(
       tagName,

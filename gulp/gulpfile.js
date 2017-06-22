@@ -7,7 +7,7 @@ var webpack = require('webpack');
 var fs = require('fs');
 var Handlebars = require('handlebars');;
 
-function printWebpackStats (stats) {
+function printWebpackStats(stats) {
   gutil.log('[webpack:build]');
   console.log(stats.toString({
     version: false,
@@ -18,7 +18,7 @@ function printWebpackStats (stats) {
 }
 
 var finish;
-function generateHomePage (err, stats) {
+function generateHomePage(err, stats) {
   if (err) {
     throw new gutil.PluginError('build', err);
   }
@@ -39,17 +39,17 @@ function generateHomePage (err, stats) {
   }
 }
 
-gulp.task('clean', function () {
+gulp.task('clean', function() {
   return del(['./dist/**/*']);
 });
 
 var compiler;
-gulp.task('dev', ['clean'], function (cb) {
+gulp.task('dev', ['clean'], function(cb) {
   finish = cb;
   var compiler = webpack(require('./build/webpack.dev.config'), generateHomePage);
 
-  gulp.task('rebuild', function (finish) {
-    compiler.run(function (err, stats) {
+  gulp.task('rebuild', function(finish) {
+    compiler.run(function(err, stats) {
       if(err) {
         throw new gutil.PluginError('rebuild', err);
       }
@@ -61,7 +61,7 @@ gulp.task('dev', ['clean'], function (cb) {
   gulp.watch(['./src/**/*'], ['rebuild']);
 });
 
-gulp.task('prod', ['clean'],function (cb) {
+gulp.task('prod', ['clean'],function(cb) {
   finish = cb;
   webpack(require('./build/webpack.prod.config'), generateHomePage);
 });

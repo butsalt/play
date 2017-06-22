@@ -1,3 +1,3 @@
-exports.trim = function (str) {
+exports.trim = function(str) {
   return str.trim();
 };

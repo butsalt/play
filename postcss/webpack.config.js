@@ -42,7 +42,7 @@ module.exports = {
     new ExtractTextPlugin('[name].css')
   ],
   //postcss的插件配置
-  postcss: function (webpack) {
+  postcss: function(webpack) {
     //postccImport -> precss -> autoprefixer
     return [
       //@import的样式也同样能被作为模块，发生变化时webpack会重新编译文件

@@ -1,4 +1,4 @@
-exports.compile = function (compiler, args, content, parents, options, blockName) { 
+exports.compile = function(compiler, args, content, parents, options, blockName) { 
   console.log(args);
   let output = `_output += '<content>';`;
   output += compiler(content, parents, options, blockName);
@@ -6,10 +6,10 @@ exports.compile = function (compiler, args, content, parents, options, blockName
   return output;
 };
 
-exports.parse = function (str, line, parser, types) {
+exports.parse = function(str, line, parser, types) {
   parser.on(
     types.STRING,
-    function (token) {
+    function(token) {
       // 如果返回一个真值，则parseToken函数仍会对token进行加工，并将结果push到this.out中
       return true;
     }
