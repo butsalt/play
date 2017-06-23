@@ -1,7 +1,7 @@
 let co = require('co');
 
 function getName() {
-  return new Promise(function(resolve) {
+  return new Promise(function (resolve) {
     resolve('butSalt');
   });
 }
@@ -16,6 +16,6 @@ co(
     return 'Hi, ' + name;
   }
 )
-  .then(function(res) {
+  .then(function (res) {
     console.log(res);
   });
