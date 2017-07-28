@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>play</title>
+</head>
+<body>
+<div id="J-bark-btn"></div>
+<button id="J-create-listener-btn">create listener</button>
+<script type="text/javascript">
+  document.getElementById('J-create-listener-btn')
+    .addEventListener('click', function () {
+      document.getElementById('J-btn')
+        .addEventListener(
+          'click',
+          function bark() {
+            alert('bark')
+          }
+        )
+    })
+</script>
+</body>
+</html>

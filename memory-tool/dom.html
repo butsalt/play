@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>play</title>
+</head>
+<body>
+<div id="J-container"></div>
+<button id="J-create-dom-btn">create dom</button>
+<script type="text/javascript">
+  document.getElementById('J-create-dom-btn')
+    .addEventListener('click', function () {
+      document.getElementById('J-container')
+        .appendChild(
+          document.createElement('div')
+        )
+    })
+</script>
+</body>
+</html>
