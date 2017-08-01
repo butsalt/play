@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>play</title>
+</head>
+<body>
+<button id="J-create-func-btn">create func</button>
+<script type="text/javascript">
+  var arr = [];
+  // function的代码经编译后对应一个compiled code实例
+  // 如果函数没有名字，则compiled code实例的名字叫做shared function info
+
+  // 一个函数实例对应一个closure实例
+  // 一个compiled code实例可以服务于多个closure实例
+
+  // 如果函数实例还使用了闭包，那么一层闭包创建一个system/Context实例
+  document.getElementById('J-create-func-btn')
+    .addEventListener('click', function () {
+      var num1 = Math.random();
+      (function inner() {
+        var num2 = Math.random()
+        arr.push(function brak() {
+          alert(num1 + num2);
+        })
+      })()
+    })
+</script>
+</body>
+</html>

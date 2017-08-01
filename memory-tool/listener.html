@@ -9,9 +9,11 @@
 <script type="text/javascript">
   document.getElementById('J-create-listener-btn')
     .addEventListener('click', function () {
-      document.getElementById('J-btn')
+      document.getElementById('J-bark-btn')
         .addEventListener(
           'click',
+          // bark函数对应的closure实例属于native in HTMLDivElement
+          // 说明是作为监听函数被一个HTMLDivElement实例所引用，所以无法释放
           function bark() {
             alert('bark')
           }

@@ -6,11 +6,16 @@
 <body>
 <button id="J-create-task-btn">create task</button>
 <script type="text/javascript">
+  function Test() {
+
+  }
   document.getElementById('J-create-task-btn')
     .addEventListener('click', function () {
+      var test = new Test()
+      // 定时任务似乎无法被观察到
       setInterval(function task () {
-        console.log('task runing')
-      }, 10000);
+        console.log(test)
+      }, 5000);
     })
 </script>
 </body>

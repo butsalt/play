@@ -4,15 +4,20 @@
   <title>play</title>
 </head>
 <body>
-<div id="J-container"></div>
 <button id="J-create-dom-btn">create dom</button>
 <script type="text/javascript">
+  var arr = [];
   document.getElementById('J-create-dom-btn')
     .addEventListener('click', function () {
-      document.getElementById('J-container')
-        .appendChild(
-          document.createElement('div')
-        )
+      // 一个HTMLDivElement实例，为选中时显示为黄色，选中时显示为红色
+      // 说明不存在于文档流中，但因为被全局js对象引用，所以无法释放
+      var div = document.createElement('div');
+      // 一个HTMLParagraphElement实例，显示为红色
+      // 说明不存在于文档流中，但因为祖先节点被全局js对象引用，所以无法释放
+      var p = document.createElement('p');
+      div.appendChild(p);
+
+      arr.push(div);
     })
 </script>
 </body>
